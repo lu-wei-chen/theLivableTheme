@@ -1,0 +1,113 @@
+/*
+Theme Name: Flatsome-Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+
+*/
+
+/*************** MOBILE MENU STYLING - BY SEB  ***************/
+
+.off-canvas-right .mfp-content, .off-canvas-left .mfp-content { /* Menu Background Color */
+    background-color: #fff !important;
+}
+
+.off-canvas .nav-vertical>li>a { /* Main Menu Links Styling */
+    font-size: 22px;
+    color: #555;
+    line-height: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0px !important;
+}
+
+.nav-vertical>li>ul li a { /* Sub Menu Links Styling */
+  color: #d26e4b;
+}
+
+.nav-vertical>li>ul li a:hover { /* Sub Menu Links: Hover Styling */
+  color: #555;
+}
+
+.nav-vertical li li.menu-item-has-children>a { /* Sub Menu Links with Children: Styling */
+    color: #777;
+    text-transform: none;
+    font-size: 100%;
+}
+
+.toggle, .toggle:focus { /* Dropdown arrow styling */
+    color: #d26e4b;
+    opacity: 1;
+}
+
+@media screen and (max-width: 549px) { /* Close X styling for Phone */
+.mfp-ready .mfp-close { 
+	color:#d26e4b;
+    opacity: 1;
+    mix-blend-mode: inherit;
+}
+}
+
+.off-canvas-right .mfp-content, .off-canvas-left .mfp-content { /* Menu Transition Speed */
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.nav-sidebar.nav-vertical>li.menu-item.active, .nav-sidebar.nav-vertical>li.menu-item:hover { /* Remove Background Hover */
+    background-color: transparent;
+}
+
+.nav-sidebar.nav-vertical>li+li { /* Border Styling */
+    border-top: 0px solid #ececec;
+}
+
+.nav-sidebar .button { /* Button Full Width */
+    width:100%;
+}
+
+.nav-sidebar li.html.header-button-1, .nav-sidebar li.html.header-button-2 { /* Button Small Margin */
+	margin:4px !important;
+}
+
+@media screen and (max-width: 549px) { /* Width & Padding Menu - Phone Only */
+	.off-canvas .sidebar-menu, .cart-popup-inner.inner-padding {
+	padding: 70px 40px;
+	}
+	.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
+	width: 100%;
+	}
+}
+
+@media screen and (min-width: 550px) { /* Width & Padding Menu - Tablet Dekstop */
+	.off-canvas .sidebar-menu, .cart-popup-inner.inner-padding {
+	padding: 40px;
+	}
+	.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
+	width: 400px;
+	}
+}
+
+@media screen and (min-width: 1800px) { /* Width & Padding Menu - Big Dekstop */
+	.off-canvas .sidebar-menu, .cart-popup-inner.inner-padding {
+	padding: 80px;
+	}
+	.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
+	width: 500px;
+	}
+}
+
+.nav-vertical li li, .off-canvas:not(.off-canvas-center) .nav-vertical li>a, .nav-sidebar .off-canvas:not(.off-canvas-center) .nav-vertical li>a { /* Important Padding - Dont remove */
+    padding-left: 0px;
+}
+
+.nav-vertical li li.menu-item-has-children { /* Important Padding - Dont remove */
+	margin:0px;
+}
+
+.off-canvas:not(.off-canvas-center) li.html { /* Padding & Margin - Dont remove */
+    padding: 0px;
+    margin: 20px 0px;
+}
+
